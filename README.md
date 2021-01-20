@@ -21,3 +21,18 @@ FlowerArrangements <|-- Customer
       +Varchar Nama
       +Varchar Alamat
     }
+    
+    @ ERD
+erDiagram
+FlowerArrangements ||..|| Customer : is
+        
+FlowerArrangements {
+Int No_Nota
+Int Tanggal_Pemesanan
+Int Tanggal_Pengantaran
+}
+Customer {
+int No_Nota
+varchar Nama
+varchar Alamat
+}
