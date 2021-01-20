@@ -6,15 +6,18 @@ NANDA BAGUS PRATAMA (1917051033)
 Task : Membuat program di Netbeans (progress),
        Membuat Repository di Github
 
+
 M. ARROZI IRFAN (1957051008)
 
 Task : Membuat program di NetBeans (progress),
        Membuat Class Diagram di https://mermaid-js.github.io
 
+
 ARJA SYAHRIRA (1917051036)
 
 Task : Membuat program di Netbeans (progress),
        Membuat ERD di https://mermaid-js.github.io
+
 
 
 @ CLASS DIAGRAM
