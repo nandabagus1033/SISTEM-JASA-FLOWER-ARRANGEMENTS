@@ -19,17 +19,17 @@ Task : Membuat program di Netbeans (progress),
 
 @ CLASS DIAGRAM
       
-      FlowerArrangements <|-- Customer
-      class FlowerArrangements {
-      +Int No_Nota
-      +Int Tanggal_Pemesanan
-      +Int Tanggal_Pengantaran      
+    FlowerArrangements <|-- Customer
+    class FlowerArrangements {
+    +Int No_Nota
+    +Int Tanggal_Pemesanan
+    +Int Tanggal_Pengantaran      
     }
     
-    class Customer{
-      +Int No_Nota
-      +Varchar Nama
-      +Varchar Alamat
+    class Customer {
+    +Int No_Nota
+    +Varchar Nama
+    +Varchar Alamat
     }
     
     
