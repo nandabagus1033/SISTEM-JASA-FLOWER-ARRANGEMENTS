@@ -14,7 +14,7 @@ Task : Membuat program di Netbeans (progress),
        Membuat ERD di https://mermaid-js.github.io
 
 
-@ Class Diagram
+@ CLASS DIAGRAM
       
       FlowerArrangements <|-- Customer
       class FlowerArrangements {
@@ -31,8 +31,8 @@ Task : Membuat program di Netbeans (progress),
     
     
 @ ERD
-erDiagram
 
+    erDiagram
     FlowerArrangements ||..|| Customer : is 
     FlowerArrangements {
     Int No_Nota
