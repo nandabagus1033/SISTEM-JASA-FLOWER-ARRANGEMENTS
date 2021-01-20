@@ -6,3 +6,39 @@ Alat-alat dari proyek ini:
 @ NetBeans
 @ MySQL server
 @ Scene Builder
+
+
+
+// Class Digram dan ERD Diagram
+Untuk melihat class diagram dan ERD di bawah ini, sillahkan ke https://mermaid-js.github.io
+
+@ Class Diagram
+FlowerArrangements <|-- Customer
+    
+    class FlowerArrangements {
+      +Int No_Nota
+      +Int Tanggal_Pemesanan
+      +Int Tanggal_Pengantaran      
+    }
+    
+    class Customer{
+      +Int No_Nota
+      +Varchar Nama
+      +Varchar Alamat
+    }
+
+@ ERD
+erDiagram
+FlowerArrangements ||..|| Customer : is
+        
+FlowerArrangements {
+Int No_Nota
+Int Tanggal_Pemesanan
+Int Tanggal_Pengantaran
+}
+Customer {
+int No_Nota
+varchar Nama
+varchar Alamat
+}
+
