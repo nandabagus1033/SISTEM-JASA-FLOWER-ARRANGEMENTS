@@ -8,9 +8,9 @@ Alat-alat dari proyek ini:
 @ Scene Builder
 
 @ Class Diagram
-FlowerArrangements <|-- Customer
-    
-    class FlowerArrangements {
+      
+      FlowerArrangements <|-- Customer
+      class FlowerArrangements {
       +Int No_Nota
       +Int Tanggal_Pemesanan
       +Int Tanggal_Pengantaran      
@@ -22,17 +22,19 @@ FlowerArrangements <|-- Customer
       +Varchar Alamat
     }
     
-    @ ERD
+    
+@ ERD
 erDiagram
-FlowerArrangements ||..|| Customer : is
-        
-FlowerArrangements {
-Int No_Nota
-Int Tanggal_Pemesanan
-Int Tanggal_Pengantaran
-}
-Customer {
-int No_Nota
-varchar Nama
-varchar Alamat
-}
+
+    FlowerArrangements ||..|| Customer : is 
+    FlowerArrangements {
+    Int No_Nota
+    Int Tanggal_Pemesanan
+    Int Tanggal_Pengantaran
+    }
+   
+    Customer {
+    int No_Nota
+    varchar Nama
+    varchar Alamat
+    }
