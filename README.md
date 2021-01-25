@@ -34,7 +34,7 @@ Task : Membuat program di Netbeans (progress),
     +Varchar Nama
     +Varchar Alamat
     }
-    
+
     
 @ ERD
 
