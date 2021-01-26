@@ -22,35 +22,49 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
 
 @ CLASS DIAGRAM
       
-    FlowerArrangements <|-- Customer
-    class FlowerArrangements {
-    +Int No_Nota
-    +Int Tanggal_Pemesanan
-    +Int Tanggal_Pengantaran      
+    classDiagram
+    Bunga <|-- Customer : Implements
+    Bunga o-- Bunga Alami : Memiliki
+    Bunga o-- Bunga Sintetis : Memiliki
+    class Bunga {
+    +Varchar Nama    
     }
-    
-    class Customer {
-    +Int No_Nota
+    class Customer{
+    +Int ID
     +Varchar Nama
-    +Varchar Alamat
+    +Varchar TanggalPesan
+    +Varchar Ucapan
+    }
+    class Bunga Alami{
+    +Varchar LayuDalam
+    }
+    class Bunga Sintetis {
+    +Varchar JenisBahan
     }
 
-    
+
+
 @ ERD
 
-    erDiagram
-    FlowerArrangements ||..|| Customer : is 
-    FlowerArrangements {
-    Int No_Nota
-    Int Tanggal_Pemesanan
-    Int Tanggal_Pengantaran
-    }
-   
-    Customer {
-    int No_Nota
-    varchar Nama
-    varchar Alamat
-    }
+       erDiagram
+       Bunga ||..|| Customer : is
+       Bunga ||--|| BungaAlami : Memilki
+       Bunga ||--|| BungaSintetis : Memilki   
+       Bunga {
+       Varchar Nama
+       }
+       Customer{
+       Int ID
+       Varchar Nama
+       Varchar TanggalPesan
+       Varchar Ucapan
+       }
+       BungaAlami{
+       Varchar LayuDalam
+       }
+       BungaSintetis{
+       Varchar JenisBahan
+       }
     
     
  @ JAVAFX
