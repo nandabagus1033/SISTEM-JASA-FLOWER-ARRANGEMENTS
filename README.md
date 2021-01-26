@@ -1,21 +1,21 @@
 # SISTEM-JASA-FLOWER-ARRANGEMENTS
-Sistem ini dapat digunakan untuk merekam data pengantaran flower arrangements, meliputi nomor nota pembelian, tanggal pembuatan, dan tanggal pengantaran. Dibuat untuk memenuhi tugas final project mata kuliah Pemrograman Berorientasi Objek tahun ajaran 2020/2021, S1 Ilmu Komputer, Universitas Lampung.
+Sistem ini dapat digunakan untuk merekam data ID Customer, Bunga pilihan, Tanggal Pesanan, dan Ucapan dalam karangan bunga menggunakan javafx. Dalam tampilannya GUI-nya dapat menggunakan scene builder dan mengkoneksi DB ke Xampp. Dibuat untuk memenuhi tugas final project mata kuliah Pemrograman Berorientasi Objek tahun ajaran 2020/2021, S1 Ilmu Komputer, Universitas Lampung.
 
 NANDA BAGUS PRATAMA (1917051033)
 
-Task : Membuat program di Netbeans (progress),
+Task : Membuat program di Netbeans (Tampilan GUI, Koneksi database)
        Membuat Repository di Github
 
 
 M. ARROZI IRFAN (1957051008)
 
-Task : Membuat program di NetBeans (progress),
+Task : Membuat program di NetBeans (Membuat program class javafx),
        Membuat Class Diagram di https://mermaid-js.github.io
 
 
 ARJA SYAHRIRA (1917051036)
 
-Task : Membuat program di Netbeans (progress),
+Task : Membuat program di Netbeans (Membuat program class javafx),
        Membuat ERD di https://mermaid-js.github.io
 
 
