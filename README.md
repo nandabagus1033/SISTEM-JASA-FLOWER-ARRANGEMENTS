@@ -51,3 +51,11 @@ Task : Membuat program di Netbeans (progress),
     varchar Nama
     varchar Alamat
     }
+    
+    
+ @ JAVAFX
+ 
+    
+ 
+ 
+    
