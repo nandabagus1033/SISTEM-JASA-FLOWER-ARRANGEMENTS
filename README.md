@@ -68,8 +68,105 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     
     
  @ JAVAFX
- 
+ 1.CUSTOMER.java
+  
+       package karanganbungafx;
+
+       import javafx.beans.property.IntegerProperty;
+       import javafx.beans.property.SimpleIntegerProperty;
+       import javafx.beans.property.SimpleStringProperty;
+       import javafx.beans.property.StringProperty;
+       public class Customer {
+    IntegerProperty IDCustom;
+    StringProperty PesanBunga;
+    StringProperty tanggal;
+    StringProperty ucapan;
+
+    public Customer(Integer IDCustom, String PesanBunga, String tanggal, String ucapan) {
+        this.IDCustom = new SimpleIntegerProperty(IDCustom);
+        this.PesanBunga = new SimpleStringProperty(PesanBunga);
+        this.tanggal = new SimpleStringProperty(tanggal);
+        this.ucapan = new SimpleStringProperty(ucapan);
+    }
+
+    public Integer getIDCustom() {
+        return IDCustom.get();
+    }
+
+    public void setIDCustom(Integer IDCustom) {
+        this.IDCustom.set(IDCustom);
+    }
+
+    public String getPesanBunga() {
+        return PesanBunga.get();
+    }
+
+    public void setPesanBunga(String PesanBunga) {
+        this.PesanBunga.set(PesanBunga);
+    }
+
+    public String getTanggal() {
+        return tanggal.get();
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal.set(tanggal);
+    }
+
+    public String getUcapan() {
+        return ucapan.get();
+    }
+
+    public void setUcapan(String ucapan) {
+        this.ucapan.set(ucapan);
+    }  
+    }
     
+    
+2.MAIN.java
+       
+    package karanganbungafx;
+
+       import java.sql.SQLException;
+       import java.util.logging.Level;
+       import java.util.logging.Logger;
+       import javafx.application.Application;
+       import static javafx.application.Application.launch;
+       import javafx.fxml.FXMLLoader;
+       import javafx.scene.Parent;
+       import javafx.scene.Scene;
+       import javafx.stage.Stage;
+       import karanganbungafx.database.DBHelper;
+
+       public class Main extends Application {
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("KaranganFXMLDocument.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+        stage.setScene(scene);
+        stage.show();
+    }
+
+        public static void main(String[] args) {
+        try {
+            if(null != DBHelper.getConnection("MYSQL")){
+            System.out.println("succes");
+            } else{
+            System.out.println("Gagal");
+            } 
+            
+            
+            launch(args);
+            } catch (SQLException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            } 
+    }
+    
+       }
+
  
  
     
