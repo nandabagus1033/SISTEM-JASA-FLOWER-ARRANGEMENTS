@@ -240,7 +240,7 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
        }
   
   
-=============================== = =========================================================================
+
   @BUNGA DATA MODEL
 
 package karanganbungafx;
