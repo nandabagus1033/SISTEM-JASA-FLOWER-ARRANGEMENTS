@@ -43,7 +43,6 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     }
 
 
-
 @ ERD
 --------------------------------------------------------------------------
        erDiagram
@@ -192,7 +191,7 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     }
        }
 
-4)BUNGA ALAMI
+4)BUNGA ALAMI.java
 --------------------------------------------------------------------------
 
        package karanganbungafx;
@@ -215,7 +214,7 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     }  
        }
 
-5)BUNGA SINTETIS
+5)BUNGA SINTETIS.java
 --------------------------------------------------------------------------
 
        package karanganbungafx;
