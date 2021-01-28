@@ -21,7 +21,7 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
 
 
 @ CLASS DIAGRAM
-      
+--------------------------------------------------------------------------
     classDiagram
     Bunga <|-- Customer : Implements
     Bunga o-- Bunga Alami : Memiliki
@@ -45,7 +45,7 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
 
 
 @ ERD
-
+--------------------------------------------------------------------------
        erDiagram
        Bunga ||..|| Customer : is
        Bunga ||--|| BungaAlami : Memilki
@@ -68,8 +68,9 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     
     
  @ JAVAFX
- 
- 1.CUSTOMER.java
+ --------------------------------------------------------------------------
+ 1)CUSTOMER.java
+ --------------------------------------------------------------------------
   
        package karanganbungafx;
 
@@ -124,7 +125,8 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     }
     
     
-2.MAIN.java
+2)MAIN.java
+--------------------------------------------------------------------------
        
     package karanganbungafx;
 
@@ -168,14 +170,14 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     
        }
 
-@BUNGA
+3)BUNGA.java
+--------------------------------------------------------------------------
 
-package karanganbungafx;
-
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-public class Bunga {
-    StringProperty namaBunga;
+       package karanganbungafx;
+       import javafx.beans.property.SimpleStringProperty;
+       import javafx.beans.property.StringProperty;
+       public class Bunga {
+       StringProperty namaBunga;
 
     public Bunga(String namaBunga) {
         this.namaBunga = new SimpleStringProperty(namaBunga);
@@ -188,17 +190,16 @@ public class Bunga {
     public void setNamaBunga(String namaBunga) {
         this.namaBunga.set(namaBunga);
     }
+       }
 
-}
+4)BUNGA ALAMI
 --------------------------------------------------------------------------
-@BUNGA ALAMI
 
-package karanganbungafx;
-
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-public class BungaAlami extends Bunga{
-    IntegerProperty hari;
+       package karanganbungafx;
+       import javafx.beans.property.IntegerProperty;
+       import javafx.beans.property.SimpleIntegerProperty;
+       public class BungaAlami extends Bunga{
+      IntegerProperty hari;
 
     public BungaAlami(String namaBunga, int hari) {
         super(namaBunga);
@@ -211,18 +212,16 @@ public class BungaAlami extends Bunga{
 
     public void setHari(Integer hari) {
         this.hari.set(hari);
-    }
-    
+    }  
+       }
 
-}
------------------------------------------------------
-@BUNGA SINTETIS
+5)BUNGA SINTETIS
+--------------------------------------------------------------------------
 
-package karanganbungafx;
-
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-public class BungaSintetis extends Bunga{
+       package karanganbungafx;
+       import javafx.beans.property.SimpleStringProperty;
+       import javafx.beans.property.StringProperty;
+       public class BungaSintetis extends Bunga{
     StringProperty bahan;
 
     public BungaSintetis(String namaBunga, String bahan) {
@@ -239,10 +238,5 @@ public class BungaSintetis extends Bunga{
     }
     
 
-}
---------------------------------------------------------------
-
-
- 
- 
-    
+       }
+       
