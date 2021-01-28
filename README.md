@@ -168,6 +168,81 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
     
        }
 
+@BUNGA
+
+package karanganbungafx;
+
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+public class Bunga {
+    StringProperty namaBunga;
+
+    public Bunga(String namaBunga) {
+        this.namaBunga = new SimpleStringProperty(namaBunga);
+    }
+
+    public String getNamaBunga() {
+        return namaBunga.get();
+    }
+
+    public void setNamaBunga(String namaBunga) {
+        this.namaBunga.set(namaBunga);
+    }
+
+}
+--------------------------------------------------------------------------
+@BUNGA ALAMI
+
+package karanganbungafx;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+public class BungaAlami extends Bunga{
+    IntegerProperty hari;
+
+    public BungaAlami(String namaBunga, int hari) {
+        super(namaBunga);
+        this.hari = new SimpleIntegerProperty(hari);
+    }
+
+    public Integer getHari() {
+        return hari.get();
+    }
+
+    public void setHari(Integer hari) {
+        this.hari.set(hari);
+    }
+    
+
+}
+-----------------------------------------------------
+@BUNGA SINTETIS
+
+package karanganbungafx;
+
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+public class BungaSintetis extends Bunga{
+    StringProperty bahan;
+
+    public BungaSintetis(String namaBunga, String bahan) {
+        super(namaBunga);
+        this.bahan = new SimpleStringProperty(bahan);
+    }
+
+    public String getBahan() {
+        return bahan.get();
+    }
+
+    public void setBahan(String bahan) {
+        this.bahan.set(bahan);
+    }
+    
+
+}
+--------------------------------------------------------------
+
+
  
  
     
