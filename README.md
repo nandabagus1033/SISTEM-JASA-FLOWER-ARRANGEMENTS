@@ -241,21 +241,21 @@ Task : Membuat program di Netbeans (Membuat program class javafx),
   
   
 
-  @BUNGA DATA MODEL
+6)BUNGA DATA MODEL.java
+--------------------------------------------------------------------------
+       package karanganbungafx;
 
-package karanganbungafx;
+       import java.sql.Connection;
+       import java.sql.PreparedStatement;
+       import java.sql.ResultSet;
+       import java.sql.SQLException;
+       import java.util.logging.Level;
+       import java.util.logging.Logger;
+       import javafx.collections.FXCollections;
+       import javafx.collections.ObservableList;
+       import karanganbungafx.database.DBHelper;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import karanganbungafx.database.DBHelper;
-
-public class BungaDataModel {
+       public class BungaDataModel {
     public final Connection conn;
     
     public BungaDataModel(String driver) throws SQLException {
@@ -361,31 +361,31 @@ public class BungaDataModel {
     }
 
 }
-----------------------------------------------------------------------
-@KARANGAN DOCUMENT CONTROLLER
 
-package karanganbungafx;
+7)KARANGAN DOCUMENT CONTROLLER.java
+--------------------------------------------------------------------------
+       package karanganbungafx;
 
-import java.net.URL;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
+       import java.net.URL;
+       import java.sql.SQLException;
+       import java.util.ResourceBundle;
+       import java.util.logging.Level;
+       import java.util.logging.Logger;
+       import javafx.collections.FXCollections;
+       import javafx.collections.ObservableList;
+       import javafx.event.ActionEvent;
+       import javafx.fxml.FXML;
+       import javafx.fxml.Initializable;
+       import javafx.scene.control.Button;
+       import javafx.scene.control.ComboBox;
+       import javafx.scene.control.DatePicker;
+       import javafx.scene.control.Label;
+       import javafx.scene.control.TableColumn;
+       import javafx.scene.control.TableView;
+       import javafx.scene.control.TextField;
+       import javafx.scene.control.cell.PropertyValueFactory;
 
-public class KaranganDocumentContoller implements Initializable {
+       public class KaranganDocumentContoller implements Initializable {
     
     public BungaDataModel BDM;
     
@@ -582,6 +582,4 @@ public class KaranganDocumentContoller implements Initializable {
         }
     }    
     
-}
-
-       
+}      
